@@ -1,16 +1,16 @@
-HOW TO RUN THE PROGRAM: 
+# HOW TO RUN THE PROGRAM: 
 
 1) Install cython in terminal by the simple command sudo apt install cython  
 2) Write down a “compile.py” in the same folder as the file “170212_170278a2.py”	 as follows: 
 *********************************************************************
 
-from distutils.core import setup 
-from distutils.extension import Extension 
-from Cython.Distutils import build_ext 
-#from Cython.Build import cythonize 
+from distutils.core import setup  <br />
+from distutils.extension import Extension  <br />
+from Cython.Distutils import build_ext  <br />
+#from Cython.Build import cythonize  <br />
 ext_modules = [ 
     Extension("mymodule1",  ["170212_170278a2.py "]), 
-#   ... all your modules that need be compiled ... 
+   ... all your modules that need be compiled ... 
 ] 
 setup( 
     name = 'My Program Name', 
@@ -23,8 +23,8 @@ setup(
 
 *********************************************************************
 
-from logic import main    
-main ()
+            from logic import main    
+            main ()
 
 *********************************************************************
 
