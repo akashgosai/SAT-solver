@@ -1,22 +1,22 @@
-HOW TO RUN THE PROGRAM:
+HOW TO RUN THE PROGRAM: 
 
-1) Install cython in terminal by the simple command <<sudo apt install cython>>
-2) Write down a “compile.py” in the same folder as the file “170212_170278a2.py”	 as follows:
+1) Install cython in terminal by the simple command sudo apt install cython  
+2) Write down a “compile.py” in the same folder as the file “170212_170278a2.py”	 as follows: 
 *********************************************************************
 
-from distutils.core import setup
-from distutils.extension import Extension
-from Cython.Distutils import build_ext
-#from Cython.Build import cythonize
-ext_modules = [
-    Extension("mymodule1",  ["170212_170278a2.py "]),
-#   ... all your modules that need be compiled ...
-]
-setup(
-    name = 'My Program Name',
-    cmdclass = {'build_ext': build_ext},
-    ext_modules = ext_modules
-)
+from distutils.core import setup 
+from distutils.extension import Extension 
+from Cython.Distutils import build_ext 
+#from Cython.Build import cythonize 
+ext_modules = [ 
+    Extension("mymodule1",  ["170212_170278a2.py "]), 
+#   ... all your modules that need be compiled ... 
+] 
+setup( 
+    name = 'My Program Name', 
+    cmdclass = {'build_ext': build_ext}, 
+    ext_modules = ext_modules 
+) 
 
 *********************************************************************
 3) Write down a “main.py” in the same folder as the file “170212_170278a2.py”	 as follows:
